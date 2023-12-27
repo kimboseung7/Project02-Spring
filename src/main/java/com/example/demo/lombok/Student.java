@@ -10,15 +10,11 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor //인자를 하나도 쓰지 않는데 default 생성자
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Person {
-	
+public class Student {
+	int stNum;
 	String name;
-	
 	int age;
-
-
-
 }

@@ -21,6 +21,14 @@ public class PersonTest { // 스프링 컨테이너 환경을 빌려옴
 		
 		Person person2 = new Person("또치",15); //@NoArgsConstructor 없으면 애러
 		System.out.println(person2.toString());
+		//생성자는 인자가 같아야지 호출
+		//builder를 쓰면 필요한 정보만 넣을 수 있음 
+		Person person3 = Person
+								.builder()
+								.name("도우너")
+								.age(17)
+								.build();
+		System.out.println(person3.toString());
 		
 		//junit으로 test함수 단독실행
 	}

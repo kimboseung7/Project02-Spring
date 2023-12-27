@@ -10,15 +10,13 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor //인자를 하나도 쓰지 않는데 default 생성자
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Person {
-	
-	String name;
-	
-	int age;
+public class Car {
 
-
+	String model;
+	String company;
+	String color;
 
 }
